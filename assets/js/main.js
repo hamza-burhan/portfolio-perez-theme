@@ -102,7 +102,7 @@
 
 
   function Tab() {
-    $(".tabs button").on("click", function () {
+    $(".tabs button.dont-download").on("click", function () {
       var tab_id = $(this).attr("data-tab");
       $(".tabs button").removeClass("active");
       $(".tab-content").removeClass("active");
