@@ -110,8 +110,14 @@
       $("#" + tab_id).addClass("active");
     });
   }
-
   Tab();
+
+  if($("#header-title").elExists()) {
+    $("#header-title").css("cursor", "pointer").on("click", function() {
+      window.location.href = 'index.html'; // Redirect to index.html
+    });
+  }
+  
 
   if ($(".play-button").elExists()) {
     $(".play-button").magnificPopup({
