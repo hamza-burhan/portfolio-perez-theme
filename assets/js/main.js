@@ -119,6 +119,12 @@
   }
   
 
+  function smothScrool(){
+      const locomotiveScroll = new LocomotiveScroll();
+  }
+
+  smothScrool();
+
   if ($(".play-button").elExists()) {
     $(".play-button").magnificPopup({
       disableOn: 700,
